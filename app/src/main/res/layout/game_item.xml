@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    >
+
+  <android.support.constraint.Guideline
+      android:id="@+id/guide1"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.3"
+      />
+
+  <ImageView
+      android:id="@+id/ivICon"
+      android:layout_width="0dp"
+      android:layout_height="120dp"
+      android:scaleType="centerInside"
+      app:layout_constraintEnd_toStartOf="@+id/guide1"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:src="@mipmap/ic_launcher"
+      />
+
+  <TextView
+      android:id="@+id/tvName"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="8dp"
+      android:fontFamily="@font/roboto"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/ivICon"
+      app:layout_constraintTop_toBottomOf="@+id/tvScore"
+      tools:text="Splatoon"
+      />
+
+
+  <TextView
+      android:id="@+id/tvSummary"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:fontFamily="@font/roboto"
+      android:maxLines="3"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/ivICon"
+      app:layout_constraintTop_toBottomOf="@+id/tvName"
+      tools:text="This full-on single-player adventure spans 80 missions starring Agent 8, an Octoling who awakens on a dark subway platform. Navigate this mysterious underground test facility in a desperate battle to reach the surface of Inkopolis. Escape from these twisted depths, and you’ll finally be able to joi"
+      />
+
+  <TextView
+      android:id="@+id/tvScore"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="8dp"
+      android:background="@drawable/ic_raiting_background"
+      android:fontFamily="@font/roboto"
+      android:padding="8dp"
+      android:textColor="@android:color/white"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvSummary"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="4.4"
+      />
+
+</android.support.constraint.ConstraintLayout>
